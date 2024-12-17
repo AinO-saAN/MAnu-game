@@ -1,0 +1,74 @@
+*{
+margin: 0;
+    padding: 0px;
+border-radius: 20px;
+size:0px ;
+    box-sizing: border-box;
+
+}
+.mario{ 
+    background:linear-gradient(#87CEEB,#832AAA);
+    width:100% ;
+bottom: -100px;
+width : 800px;
+height: 500PX;
+border-bottom: 15px solid #67c977;
+margin: 0 auto ;
+position :relative;
+overflow :hidden;/*limita para que tudo que saia da tela não apareça*/
+
+}
+.boss{
+position: absolute;
+bottom : -130px;
+width: 300px;
+/*left: -90px; distancia do boss*/
+animation:boss-moviment 1.5s infinite linear ;
+
+}
+@keyframes boss-moviment {
+    from {right :-200px;
+    }
+    to{right:100%;  
+    }
+    
+}
+.Manu{
+    position:absolute;
+bottom:-140px;
+width: 400px; 
+left: -190px;
+/*bottom:-109px*/
+} 
+.jump{
+
+    animation: jump 400ms linear  ;
+
+}
+@keyframes jump {
+0%{
+bottom:-140px ;
+}  
+
+30%{
+    bottom:-30px;
+}
+50%{
+
+bottom:-40px;
+
+}
+0%{
+    bottom:-140px ;
+    
+    }
+
+}
+.butão{
+    box-sizing: border-box;
+ border: 20px #000
+
+
+
+
+}
